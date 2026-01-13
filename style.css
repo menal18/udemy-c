@@ -82,9 +82,14 @@ display: none;
     color: white;
     padding:10px;
     border-radius: 30px;
+    cursor: pointer;
+     border: solid #A435F0 1px;
 }
 .categories  p:hover{
-    background-color: rgb(202, 74, 196);
+    border: solid #A435F0 1px;
+    color: black;
+    background-color: transparent;
+    transition: 1s;
 }
 .sale-image img{
     width: 100%;
@@ -101,6 +106,21 @@ display: none;
     position: absolute;
     top: 10%;
     left: 10%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+    0%{
+transform: scale(0);
+opacity: 0;
+    }
+  100%{
+transform: scale(1);
+opacity: 1;
+  }  
 }
 
 .recommended{
